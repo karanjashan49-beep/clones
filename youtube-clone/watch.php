@@ -11,3 +11,4 @@ $row = $result->fetch_assoc();
 <video width="600" controls>
     <source src="uploads/<?php echo $row['filename']; ?>">
 </video>
+
