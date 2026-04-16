@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone Repo') {
+            steps {
+                git '
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "No build required for PHP"
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                sh '''
+                cp -r * /var/www/html/
+                '''
+            }
+        }
+    }
+}
