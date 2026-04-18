@@ -7,6 +7,6 @@ COPY ./code/* /var/www/html
 ADD https://templated.live/urban/download/urban.zip
 RUN unzip urban.zip 
 echo "This is template file" >> /var/www/html/index.html
-EXPOSE 89
+EXPOSE 87
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
